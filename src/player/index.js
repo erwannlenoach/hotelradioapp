@@ -9,10 +9,10 @@ const Player = () => {
   const start = async () => {
     var track = {
       url: 'https://radio2.pro-fhi.net/radio/9111/stream.mp3', // Load media from the network
-      title: 'Avaritia',
-      artist: 'deadmau5',
-      album: 'while(1<2)',
-      genre: 'Progressive House, Electro House',
+      title: 'Hotel Radio',
+      artist: 'Hotel Radio',
+      album: 'Hotel Radio',
+      genre: 'Hip-Hop, Electro',
       date: '2014-05-20T07:00:00+00:00', // RFC 3339
       artwork: 'https://highxtar.com/wp-content/uploads/2017/09/Jean_Hotel_Radio_Paris.jpg', // Load artwork from the network
       duration: 402 // Duration in seconds
@@ -22,9 +22,15 @@ const Player = () => {
     await TrackPlayer.play();
   };
 
+  const pause = async () => {
+  
+    await TrackPlayer.pause();
+  };
+
   return (
     <View style={styles.container}>
       <Button title="Play" onPress={start} />
+      <Button title="Pause" onPress={pause} />
     </View>
   );
 };
