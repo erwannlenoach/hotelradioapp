@@ -1,11 +1,11 @@
 import React, {Component, useEffect} from 'react';
 import {Button} from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import bet from '../../assets/songs/bet.mp3';
-import img from '../../assets/img/octavian.png';
 import {View, StyleSheet, TouchableOpacity} from 'react-native';
 
 const Player = () => {
+
+  // add state play / pause
   const start = async () => {
     var track = {
       url: 'https://radio2.pro-fhi.net/radio/9111/stream.mp3', // Load media from the network
@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#000',
   },
   playBtn: {
     padding: 20,

@@ -6041,6 +6041,13 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
+"react-native-rss-parser@^1.5.1":
+  "integrity" "sha512-47JcRW8utdnA0nhxnj1FNRy5o0UNPQP7UT1OBJKYq0LEkzbQIVi44LlUivazCmGQnxlAKLXo0imepsM39WxwTQ=="
+  "resolved" "https://registry.npmjs.org/react-native-rss-parser/-/react-native-rss-parser-1.5.1.tgz"
+  "version" "1.5.1"
+  dependencies:
+    "xmldom" "^0.3.0"
+
 "react-native-sound@^0.11.1":
   "integrity" "sha512-6cVmCSOvSjCBmIoc+9FFINpT1nW53KlvF/hIyD1uj+HI4NUOma08zI+8pGIpY9cExPmsOh+OoFX3EOODpY78yw=="
   "resolved" "https://registry.npmjs.org/react-native-sound/-/react-native-sound-0.11.1.tgz"
@@ -7440,6 +7447,11 @@
   "version" "1.1.2"
   dependencies:
     "sax" "^1.2.1"
+
+"xmldom@^0.3.0":
+  "integrity" "sha512-z9s6k3wxE+aZHgXYxSTpGDo7BYOUfJsIRyoZiX6HTjwpwfS2wpQBQKa2fD+ShLyPkqDYo5ud7KitmLZ2Cd6r0g=="
+  "resolved" "https://registry.npmjs.org/xmldom/-/xmldom-0.3.0.tgz"
+  "version" "0.3.0"
 
 "xtend@~4.0.1":
   "integrity" "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="

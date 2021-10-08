@@ -6,6 +6,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { Dimensions } from "react-native";
 import Player from './src/player/index'
+import Cover from './src/cover/index'
 
 library.add(fab);
 
@@ -21,11 +22,9 @@ export default function App() {
         />
       </View>
       <View style={styles.centerdiv}>
+        <Cover></Cover>
         <Player></Player>
-        <Image
-          style={styles.player}
-          source={require("./assets/img/player.png")}
-        />
+    
       </View>
       <SafeAreaView style={styles.lowerdiv}>
         <FontAwesomeIcon icon={["fab", "instagram"]} style={styles.icons} />
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
   },
   centerdiv: {
     margin: 100,
-    flex: 6,
+    flex: 5,
     height: 200,
   },
   lowerdiv: {
