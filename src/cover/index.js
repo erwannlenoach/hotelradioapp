@@ -1,27 +1,33 @@
-import React, {Component, useEffect} from 'react';
-import {View, Image, Text} from 'react-native';
-import * as rssParser from 'react-native-rss-parser';
+import React, {Component} from 'react';
+import { WebView } from 'react-native-webview';
+
 
 const Cover = () => {
 
-   function fetchCover() {
-    fetch('https://radio2.pro-fhi.net/radio/9111/rss')
-    .then((response) => response.text())
-    .then((responseData) => rssParser.parse(responseData))
-    .then((rss) => {
-      console.log(rss);
-        })
-        .catch(function(error) {
-            console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-          });
-    }
+  const jsCode = 
+  `
+  document.getElementsByClassName('elementor-section')[0].style.display = 'none'; 
+   `;
 
-fetchCover()
+   const displayCover = 
+   `
+   document.getElementsByClassName('proradio-customplayer')[0].style.display = 'block'; 
+    `;
+    setTimeout(() => {
+      this.webref.injectJavaScript(displayCover);
+    }, 3000);
+
+    
 
   return (
-    <View>
-      <Text>Cover</Text>
-    </View>
+    <WebView
+    source={{ uri: 'https://hotelradioparis.com/' }}
+   
+    injectedJavaScript={jsCode}
+    ref={r => (webref = r)}
+    onMessage={(event) => {}}
+    style={{ marginTop: 20 }}
+  />
   );
 };
 

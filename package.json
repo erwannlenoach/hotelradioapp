@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "node_modules/.bin/rn-nodeify --install fs --hack"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -15,13 +16,19 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-native-fontawesome": "^0.2.7",
+    "fs": "^0.0.1-security",
+    "iptv-playlist-parser": "^0.8.0",
+    "playlist-parser": "^0.0.12",
     "react": "17.0.2",
     "react-native": "0.66.0",
+    "react-native-fs": "^2.18.0",
     "react-native-rss-parser": "^1.5.1",
     "react-native-sound": "^0.11.1",
     "react-native-svg": "^12.1.1",
     "react-native-track-player": "^2.1.1",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "react-native-webview": "^11.14.0",
+    "rn-nodeify": "^10.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

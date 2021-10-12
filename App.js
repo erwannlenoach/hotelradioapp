@@ -57,8 +57,9 @@ const styles = StyleSheet.create({
   },
   centerdiv: {
     margin: 100,
-    flex: 5,
-    height: 200,
+    flex: 9,
+    height: 600,
+    width: 300,
   },
   lowerdiv: {
     display: "flex",
