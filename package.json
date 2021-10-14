@@ -21,6 +21,7 @@
     "playlist-parser": "^0.0.12",
     "react": "17.0.2",
     "react-native": "0.66.0",
+    "react-native-cheerio": "^1.0.0-rc.4",
     "react-native-fs": "^2.18.0",
     "react-native-level-fs": "^3.0.1",
     "react-native-rss-parser": "^1.5.1",
