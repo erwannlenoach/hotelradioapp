@@ -26,6 +26,7 @@ const Cover = () => {
     injectedJavaScript={jsCode}
     ref={r => (webref = r)}
     onMessage={(event) => {}}
+    mediaPlaybackRequiresUserAction={true}
     style={{ marginTop: 20 }}
   />
   );
