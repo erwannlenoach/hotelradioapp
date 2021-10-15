@@ -23,7 +23,7 @@ export default function App() {
       </View>
       <View style={styles.centerdiv}>
         <Cover></Cover>
-        <Player></Player>
+        <Player/>
     
       </View>
       <SafeAreaView style={styles.lowerdiv}>
