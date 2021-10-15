@@ -1,9 +1,13 @@
-import React, {Component, useEffect} from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import {Button} from 'react-native';
 import TrackPlayer from 'react-native-track-player';
 import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import { faPlay,faPause } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 const Player = () => {
+ 
+const [buttonPlay, setButtonPlay] = useState(true);
 
   // add state play / pause
   const start = async () => {
@@ -22,15 +26,15 @@ const Player = () => {
     await TrackPlayer.play();
   };
 
-  const pause = async () => {
+  const stop = async () => {
   
-    await TrackPlayer.pause();
+    await TrackPlayer.stop();
   };
 
   return (
     <View style={styles.container}>
-      <Button title="Play" onPress={start} />
-      <Button title="Pause" onPress={pause} />
+      <FontAwesomeIcon icon={faPlay} style={styles.playBtn} onPress={start}/>
+      <FontAwesomeIcon icon={faPause} style={styles.playBtn} onPress={stop} />
     </View>
   );
 };
@@ -40,6 +44,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    display: 'flex'
   },
   playBtn: {
     padding: 20,

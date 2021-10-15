@@ -22,9 +22,7 @@ export default function App() {
         />
       </View>
       <View style={styles.centerdiv}>
-        <Cover></Cover>
-        <Player/>
-    
+        <Cover/>
       </View>
       <SafeAreaView style={styles.lowerdiv}>
         <FontAwesomeIcon icon={["fab", "instagram"]} style={styles.icons} />
@@ -57,7 +55,7 @@ const styles = StyleSheet.create({
   },
   centerdiv: {
     margin: 100,
-    flex: 9,
+    flex: 8,
     height: 600,
     width: 300,
   },

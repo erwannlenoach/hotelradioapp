@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {View, Image, StyleSheet}  from 'react-native';
+import Player from '../../src/player/index'
 
 const Cover = () => {
  
@@ -29,26 +30,25 @@ const Cover = () => {
           uri: url,
         }}
       />
+       <Player/>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 4,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'blue'
   },
   playBtn: {
     padding: 20,
   },
   image: {
     width: 300,
-    height: 200,
-    flex: 1,
+    flex: 3,
     justifyContent: 'center',
-    backgroundColor: 'red'
+    margin:0,
   },
 });
   
