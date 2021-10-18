@@ -12,7 +12,6 @@ target 'HotelRadioIOS' do
     :hermes_enabled => false
   )
 
-  pod 'RNSound', :path => '../node_modules/react-native-sound'
 
 
   target 'HotelRadioIOSTests' do

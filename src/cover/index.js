@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {View, Image, StyleSheet}  from 'react-native';
-import Player from '../../src/player/index'
 
 const Cover = () => {
  
@@ -30,7 +29,6 @@ const Cover = () => {
           uri: url,
         }}
       />
-       <Player/>
     </View>
   );
 };
