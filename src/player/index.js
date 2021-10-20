@@ -17,7 +17,7 @@ const Player = () => {
       genre: 'Hip-Hop, Electro',
       date: '2014-05-20T07:00:00+00:00', 
       artwork:
-        'https://highxtar.com/wp-content/uploads/2017/09/Jean_Hotel_Radio_Paris.jpg',
+        'https://hotelradioparis.com/wp-content/uploads/2021/03/LogoELE.png',
       duration: 402, // Duration in seconds
     };
     

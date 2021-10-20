@@ -4,7 +4,7 @@ import {View, Image, StyleSheet}  from 'react-native';
 const Cover = () => {
  
   const [url, setUrl] = useState(
-    'https://hotelradioparis.com/wp-content/uploads/2021/09/241993163_245673940830326_7153954473531330161_n.jpg');
+    'https://hotelradioparis.com/wp-content/uploads/2021/03/LogoELE.png');
 
   useEffect(() => {
     myFetch();
