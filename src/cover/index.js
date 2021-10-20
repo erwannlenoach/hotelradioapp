@@ -28,6 +28,7 @@ const Cover = () => {
         source={{
           uri: url,
         }}
+        opacity={0.9}
       />
     </View>
   );
@@ -47,6 +48,7 @@ const styles = StyleSheet.create({
     flex: 3,
     justifyContent: 'center',
     margin:0,
+
   },
 });
   
